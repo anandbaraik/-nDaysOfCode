@@ -15,13 +15,15 @@ Declaration tells the browser that the document is Html & browser renders it as 
 
 The `html` element is the root of the dom tree and parent of `head & body`. the dom tree is wrapped by `html` tag.
 
-`<!DOCTYPE html>
-
-<html></html>`
+```html
+<!DOCTYPE html>
+<html></html>
+```
 
 ## DOM Tree
 
-`<!DOCTYPE html>
+```html
+<!DOCTYPE html>
 
 <html>
   <head>
@@ -30,9 +32,11 @@ The `html` element is the root of the dom tree and parent of `head & body`. the 
   <body>
     <h1 id="header">I'm the header</h1>
   </body>
-</html>`
+</html>
+```
 
-The dom tree of above code snippet\n
+The dom tree of above code snippet
+
 ![DOM Tree](https://user-images.githubusercontent.com/31516195/200629942-875cb9fe-de4d-4793-8269-8f930da2d1b4.png)
 
 - Different kind of html elememts are -
@@ -47,10 +51,10 @@ The dom tree of above code snippet\n
 
 We can use `style` html attribute to apply css to an html element. for ex:-
 
-`
+```
 
 <h1 style="color:red"> I am a red text</h1>
-`
+```
 
 ## Inline element & Block element
 
