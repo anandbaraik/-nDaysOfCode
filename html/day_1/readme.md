@@ -73,7 +73,7 @@ there are some event listeners attribute as well like `onclick`, `onsubmit`, `on
   - `<input/>`
   - `<meta/>`
 
-  * here `/` is optional for self closing tag but recommended to use it.
+* here `/` is optional for self closing tag but recommended to use it.
 
 # HTML Comment
 
