@@ -31,13 +31,13 @@ A website can have several features & sections like -
 
 - Html files
 - Css/JS files (as the browser parses html, if it finds any css/js file. it sends request back to server & then parses the css & js)
-- Then browser generate the `[Document object model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)` from the parsed html. generate the `[Css object model](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model)` structure from the parsed css & `[compiles & executes](https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work#javascript_compilation)` the parsed javascript.
+- Then browser generate the [Document object model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) from the parsed html. generate the [Css object model](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model) structure from the parsed css & [compiles & executes](https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work#javascript_compilation) the parsed javascript.
 
 ## HTML Element
 
 Html element consists of an opening tag(<>), contents & closing tag (</>)
 
-> ex: <h1> Welcome to #40DaysOfCodes.</h1>
+> ex: `<h1> Welcome to #40DaysOfCodes.</h1>`
 > here `h1` is a html tag & `Welcome to #40DaysOfCodes.` is a content.
 
 ## Html Attribute
@@ -47,7 +47,20 @@ Attributes provides an additional informations about an element & contents. an a
 > ex: `<img src="image src" alt="image description">`
 > here `alt` is an attribute in `img` tag which specifies the description about image and displayed to user when image is unavailable.
 
-some of the most used attributes are :- - alt - autocomplete - autofocus - autoplay - class - id - data-attribute (used to add custom info like: `data-name="anand"`) - download - for - href - type - style
+some of the most used attributes are :-
+
+- alt
+- autocomplete
+- autofocus
+- autoplay
+- class
+- id
+- data-attribute (used to add custom info like: `data-name="anand"`)
+- download
+- for
+- href
+- type
+- style
 
 there are some event listeners attribute as well like `onclick`, `onsubmit`, `onkeydown` etc. useful to catch the events triggered by javascript for a specific element.
 
@@ -66,5 +79,6 @@ there are some event listeners attribute as well like `onclick`, `onsubmit`, `on
 
 Comments are helpful to make codes more readable.
 
-> <!-- this is a paragraph which tells about lorem ipsum -->
+> `<!-- this is a paragraph which tells about lorem ipsum -->`
+>
 > <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
