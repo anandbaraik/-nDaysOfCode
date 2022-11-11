@@ -8,4 +8,4 @@
 | 8th Nov '22  | Html          | [Day 2](./html/day_2/readme.md) |
 | 9th Nov '22  | Html          | [Day 3](./html/day_3/readme.md) |
 | 10th Nov '22 | Html          | [Day 4](./html/day_4/readme.md) |
-| 11th Nov '22 |               |                                 |
+| 11th Nov '22 | Css           | [Day 5](./html/day_5/readme.md) |
