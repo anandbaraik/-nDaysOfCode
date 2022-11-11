@@ -11,6 +11,6 @@ Css is something that helps a html page look better & attractive. it works in co
 ```
 
 > If a particular element has all 3 types of styles applied (inline,internal,external) then which one will be applied?
-> inline style has the highest priority then comes internal style & the exernal css file which has the least priority.
+> <br>inline style has the highest priority then comes internal style & the exernal css file which has the least priority.
 
 ##
