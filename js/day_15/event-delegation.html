@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation</title>
+    <style>
+        .products{
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-gap: 10px;
+        }
+        span{
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Event delegation
+    </h1>
+    <div class="products">
+        <span class="mobile">Mobile</span>
+        <span class="headphones">Headphones</span>
+        <span class="laptop">Laptop</span>
+        <span class="speaker">Speaker</span>
+        <span class="usb_disk">USB DISK</span>
+        <span class="tripod">Tripod</span>
+    </div>
+    <script>
+        document.querySelector('.products').addEventListener('click', function(e) {
+            if(e.target.tagName === 'SPAN') {
+                window.open(`/${e.target.className}`, '_blank');
+            }
+        });
+    </script>
+</body>
+</html>
