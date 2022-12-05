@@ -8,7 +8,7 @@ The movement of events from the bottom to top is called bubbling. can be avoid b
 
 ## Difference between stopimmediatepropagation & stopPropagation
 
-you can read about it more [here](https://www.carlrippon.com/stoppropagation-v-stopimmediatepropagation/#:~:text=stopPropagation%20allows%20other%20event%20handlers,bubbling%20phases%20from%20being%20executed.)
+you can read about it more [here](https://www.carlrippon.com/stoppropagation-v-stopimmediatepropagation/)
 
 ## Which events do not bubble?
 

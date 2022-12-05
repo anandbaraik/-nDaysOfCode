@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difference between event.target VS this.target VS event.currentTarget</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        div,form,button{
+            border: 2px solid red;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Difference between event.target VS this.target VS event.currentTarget
+    </h1>
+    <div>
+        DIV
+        <form action="#!">
+            FORM
+            <button>
+                BUTTON
+            </button>
+        </form>
+    </div>
+    <script>
+        const div = document.querySelector('div');
+        const form = document.querySelector('form');
+        const button = document.querySelector('button');
+
+        div.addEventListener('click', function(event) {
+            alert(`div clicked - ${this.tagName} - ${event.target.tagName} - ${event.currentTarget.tagName}`);
+        });
+
+        form.addEventListener('click', function(event) {
+            alert(`form clicked - ${this.tagName} - ${event.target.tagName} - ${event.currentTarget.tagName}`);
+        });
+
+        button.addEventListener('click', function(event) {
+            alert(`button clicked - ${this.tagName} - ${event.target.tagName} - ${event.currentTarget.tagName}`);
+        });
+    </script>
+</body>
+</html>
