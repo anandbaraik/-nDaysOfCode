@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+    
+        .modal_btn{
+            background-color: blueviolet;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border: 0.5rem solid transparent;
+            cursor: pointer;
+            border-radius: 0.3rem;
+        }
+        .modal_container{
+            display: none;
+            position: absolute;
+            top: 0;
+            background-color: grey;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .modal{
+            width: 500px;
+            height: 400px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 5px blueviolet;
+            border-radius: 10px;
+        }
+        .action {
+            margin: 5rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="action">
+        <h1>Modal</h1>
+        <div><button class="modal_btn">Open Modal</button></div>
+    </div>
+    <div class="modal_container">
+        <div class="modal">
+            <h2>
+                Modal Content
+            </h2>
+
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector('.modal_btn');
+        const modalContainer = document.querySelector('.modal_container');
+        btn.addEventListener('click', function() {
+            toggleModal(true);
+        });
+
+        modalContainer.addEventListener('click', function(e) {
+            if(e.target.className === 'modal_container') {
+                toggleModal(false);
+            }
+        });
+
+        function toggleModal(toggle) {
+            modalContainer.style.display = toggle ? "flex" : 'none';
+        }
+    </script>
+</body>
+</html>
