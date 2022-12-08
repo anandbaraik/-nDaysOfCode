@@ -38,7 +38,7 @@ Declaring regular expression with global flag and case insensitive flag.
 let regEx= /anand/gi
 ```
 
-# RegExpp Object Methods
+# RegExp Object Methods
 
 - **Testing for a match**
   test(): Tests for a match in a string. It returns true or false.
@@ -116,4 +116,70 @@ D%o%es thi%s m%ot%iv%a%te %y%o%u to b%e a t%e%a%cher.'
 matches = txt.replace(/%/g, '')
 console.log(matches) //I am teacher and  I love teaching.There is nothing as more rewarding as educating and empowering people.I found teaching more interesting than any other jobs.Does this motivate you to be a teacher.
 
+```
+
+- []: A set of characters
+
+  - [a-c] means, a or b or c
+  - [a-z] means, any letter a to z
+  - [A-Z] means, any character A to Z
+  - [0-3] means, 0 or 1 or 2 or 3
+  - [0-9] means any number 0 to 9
+  - [A-Za-z0-9] any character which is a to z, A to Z, 0 to 9
+
+- \: uses to escape special characters
+  - \d mean: match where the string contains digits (numbers from 0-9)
+  - \D mean: match where the string does not contain digits
+- . : any character except new line character(\n)
+
+- ^: starts with
+
+  - r'^substring' eg r'^love', a sentence which starts with a word love
+  - r'[^abc] mean not a, not b, not c.
+
+- $: ends with
+
+  - r'substring$' eg r'love$', sentence ends with a word love
+
+- `*`: zero or more times
+
+  - r'[a]\*' means a optional or it can occur many times.
+
+- +: one or more times
+
+  - r'[a]+' means at least once or more times
+
+- ?: zero or one times
+
+  - r'[a]?' means zero times or once
+
+- \b: word bounder, matches with the beginning or ending of a word
+- {3}: Exactly 3 characters
+- {3,}: At least 3 characters
+- {3,8}: 3 to 8 characters
+- |: Either or
+  - r'apple|banana' mean either of an apple or a banana
+- (): Capture and group
+
+![regex](https://user-images.githubusercontent.com/31516195/206526659-b4c33101-ec3a-486b-af9a-348fe8b8f14c.png)
+
+## Let's use example to clarify the above meta characters
+
+Let's use square bracket to include lower and upper case
+
+```
+const pattern = '[Aa]pple' // this square bracket means either A or a
+const txt = 'Apple and banana are fruits. An old cliche says an apple a day keeps the  doctor way has been replaced by a banana a day keeps the doctor far far away. '
+const matches = txt.match(pattern)
+
+console.log(matches) //["Apple", index: 0, input: "Apple and banana are fruits. An old cliche says an apple a day keeps the  doctor way has been replaced by a banana a day keeps the doctor far far away.", groups: undefined]
+
+```
+
+```
+const pattern = /[Aa]pple/g // this square bracket means either A or a
+const txt = 'Apple and banana are fruits. An old cliche says an apple a day a doctor way has been replaced by a banana a day keeps the doctor far far away. '
+const matches = txt.match(pattern)
+
+console.log(matches) //["Apple", "apple"]
 ```
